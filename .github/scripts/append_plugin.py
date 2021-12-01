@@ -1,8 +1,9 @@
 import json
+import os
 
-with open('./plugin.json') as pf:
-    plugin = json.load(pf)
-    with open('./plugins.json', 'rt') as prf:
+payload = os.getenv('EVENT_PAYLOAD')
+plugin = json.loads(payload)
+with open('./plugins.json', 'rt') as prf:
         plugins = json.load(prf)
         plugins.append(plugin)
 

@@ -1,8 +1,7 @@
 name: Plugin Update
-'on':
-  push:
-    branches:
-      - plugin/*
+on: 
+  repository_dispatch:
+    types: [index-plugin]
 concurrency:
   group: ${{ github.workflow }}
   cancel-in-progress: true
@@ -21,6 +20,8 @@ jobs:
         with:
           python-version: '${{ matrix.python-version }}'
       - run: python ./.github/scripts/append_plugin.py
+        env:
+          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
       - run: ./.github/scripts/commit_push.sh
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
