@@ -36,11 +36,3 @@ jobs:
           release_name: Release ${{ github.ref_name }}
           draft: false
           prerelease: false
-      - uses: repo-sync/pull-request@v2
-        name: pull-request
-        with:
-          destination_branch: "main"
-          pr_title: "Pulling ${{ github.ref_name }} into main"
-          pr_body: "👑 *An automated PR*"
-          pr_draft: false
-          github_token: ${{ secrets.GITHUB_TOKEN }}
