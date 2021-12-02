@@ -21,7 +21,7 @@ jobs:
           python-version: '${{ matrix.python-version }}'
       - run: python ./.github/scripts/append_plugin.py
         env:
-          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload.plugins) }}
+          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
       - run: ./.github/scripts/commit_push.sh
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
@@ -32,7 +32,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ github.ref_name }}
-          release_name: Release ${{ github.event.client_payload.release }}
+          tag_name: '${{ github.event.client_payload.repo }}-${{ github.event.client_payload.tag }}'
+          release_name: 'Release ${{ github.event.client_payload.repo }}-${{ github.event.client_payload.tag }}'
           draft: false
           prerelease: false
