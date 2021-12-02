@@ -21,7 +21,7 @@ jobs:
           python-version: '${{ matrix.python-version }}'
       - run: python ./.github/scripts/append_plugin.py
         env:
-          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          EVENT_PAYLOAD: ${{ toJson(github.event.client_payload.plugins) }}
       - run: ./.github/scripts/commit_push.sh
         env:
           GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
