@@ -6,7 +6,7 @@ plugins_file = "./docs/plugins.json"
 payload = json.loads(os.getenv('EVENT_PAYLOAD'))
 repo = payload["repo"]
 release = payload["release"]
-url = f"https://github.com/{repo}-{release}"
+url = f"https://github.com/{repo}"
 
 plugin = payload["plugin"]
 plugin["releases"] = [ release ]
