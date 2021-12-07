@@ -33,6 +33,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: '${{ github.event.client_payload.repo }}-${{ github.event.client_payload.release }}'
-          release_name: 'Release ${{ github.event.client_payload.repo }}-${{ github.event.client_payload.tag }}'
+          release_name: '${{ github.event.client_payload.repo }}-${{ github.event.client_payload.release }}'
           draft: false
           prerelease: false
