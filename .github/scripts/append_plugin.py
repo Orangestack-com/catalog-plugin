@@ -2,10 +2,7 @@ import json
 import os
 
 plugins_file = "./docs/plugins.json"
-
-#payload = json.loads(os.getenv('EVENT_PAYLOAD'))
-s = '{"plugin":{"computedInputs":{"app_class_name":"{{inputs.project_name|title|replace(' ', '')}}"},"description":"Languages environment base plugin","inputs":[{"label":"Application name:","name":"project_name","type":"text"},{"condition":{"operator":"==","value":"kotlin","variable":"language"},"label":"Application group id:","name":"project_group_id","type":"text"},{"label":"Application version:","name":"project_group_id","type":"text"}],"languages":["kotlin"],"name":"languages-env-base-plugin","tags":["environment","kotlin","container"],"type":"env"},"release":"1.0.1","repo":"Orangestack-com/languages-env-base-plugin"}'
-payload = json.loads(s)
+payload = json.loads(os.getenv('EVENT_PAYLOAD'))
 
 repo = payload["repo"]
 release = payload["release"]
