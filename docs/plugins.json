@@ -1,1 +1,44 @@
-[]
+[
+    {
+        "description": "Just a sample plugin",
+        "inputs": [
+            {
+                "label": "Example of text",
+                "name": "any_number",
+                "type": "text"
+            },
+            {
+                "default": "42",
+                "label": "Example of number",
+                "name": "any_number",
+                "type": "int"
+            },
+            {
+                "items": [
+                    "item1",
+                    "item2"
+                ],
+                "label": "Example of list",
+                "name": "any_list",
+                "type": "multiselect"
+            }
+        ],
+        "languages": [
+            "typescript",
+            "python"
+        ],
+        "name": "sample-plugin",
+        "tags": [
+            "sample",
+            "orange"
+        ],
+        "type": "app",
+        "releases": [
+            "1.0.0",
+            "1.0.1",
+            "1.0.2",
+            "1.0.3"
+        ],
+        "url": "https://github.com/Orangestack-com/stacklifecycle-sample-plugin"
+    }
+]
