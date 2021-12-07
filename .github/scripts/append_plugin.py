@@ -2,10 +2,15 @@ import json
 import os
 
 plugins_file = "./docs/plugins.json"
+
 payload = json.loads(os.getenv('EVENT_PAYLOAD'))
-tag = payload["tag"]
+repo = payload["repo"]
+url = f"https://github.com/{repo}"
+release = payload["release"]
+
 plugin = payload["plugin"]
-plugin["tags"] = [ tag ]
+plugin["releases"] = [ release ]
+plugin["url"] = url
 
 with open(plugins_file, 'rt') as prf:
         plugins = json.load(prf)
@@ -14,9 +19,9 @@ with open(plugins_file, 'rt') as prf:
         else:
                 for p in plugins:
                         if p["name"] == plugin["name"]:
-                                if tag not in p["tags"]:
-                                        p["tags"].append(tag)
-                                else: raise Exception(f'plugin with tag {tag} already indexed')
+                                if release not in p["releases"]:
+                                        p["releases"].append(release)
+                                else: raise Exception(f'plugin with release {release} already indexed')
                         else: plugins.append(plugin)
 
 with open(plugins_file, 'wt', encoding='utf-8') as pwf:
