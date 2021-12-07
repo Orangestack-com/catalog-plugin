@@ -24,6 +24,7 @@ with open(plugins_file, 'rt') as prf:
                         if p["name"] == plugin["name"]:
                                 if release not in p["releases"]:
                                         p["releases"].append(release)
+                                        break
                                 else: raise Exception(f'plugin with release {release} already indexed')
                         else: 
                                 plugins.append(plugin)
