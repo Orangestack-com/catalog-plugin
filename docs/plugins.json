@@ -117,5 +117,46 @@
             "1.0.1"
         ],
         "url": "https://github.com/Orangestack-com/stages-plugin"
+    },
+    {
+        "computedInputs": {
+            "app_class_name": "{{inputs.project_name|title|replace(' ', '')}}"
+        },
+        "description": "Languages environment base plugin",
+        "inputs": [
+            {
+                "label": "Application name:",
+                "name": "project_name",
+                "type": "text"
+            },
+            {
+                "condition": {
+                    "operator": "==",
+                    "value": "kotlin",
+                    "variable": "language"
+                },
+                "label": "Application group id:",
+                "name": "project_group_id",
+                "type": "text"
+            },
+            {
+                "label": "Application version:",
+                "name": "project_group_id",
+                "type": "text"
+            }
+        ],
+        "name": "languages-env-base-plugin",
+        "tags": [
+            "environment",
+            "kotlin",
+            "container"
+        ],
+        "types": [
+            "env"
+        ],
+        "releases": [
+            "1.0.3"
+        ],
+        "url": "https://github.com/Orangestack-com/languages-env-base-plugin"
     }
 ]
