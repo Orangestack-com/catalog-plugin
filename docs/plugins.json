@@ -42,48 +42,6 @@
         "url": "https://github.com/Orangestack-com/stacklifecycle-sample-plugin"
     },
     {
-        "computedInputs": {
-            "app_class_name": "{{inputs.project_name|title|replace(' ', '')}}"
-        },
-        "description": "Languages environment base plugin",
-        "inputs": [
-            {
-                "label": "Application name:",
-                "name": "project_name",
-                "type": "text"
-            },
-            {
-                "condition": {
-                    "operator": "==",
-                    "value": "kotlin",
-                    "variable": "language"
-                },
-                "label": "Application group id:",
-                "name": "project_group_id",
-                "type": "text"
-            },
-            {
-                "label": "Application version:",
-                "name": "project_group_id",
-                "type": "text"
-            }
-        ],
-        "languages": [
-            "kotlin"
-        ],
-        "name": "languages-env-base-plugin",
-        "tags": [
-            "environment",
-            "kotlin",
-            "container"
-        ],
-        "type": "env",
-        "releases": [
-            "1.0.2"
-        ],
-        "url": "https://github.com/Orangestack-com/languages-env-base-plugin"
-    },
-    {
         "description": "This plugin creates the stages folder with the environment properties file.",
         "inputs": [
             {
@@ -120,7 +78,7 @@
     },
     {
         "computedInputs": {
-            "app_class_name": "{{inputs.project_name|title|replace(' ', '')}}"
+            "app_class_name": "{{inputs.project_name|title|replace(, )}}"
         },
         "description": "Languages environment base plugin",
         "inputs": [
@@ -154,9 +112,10 @@
         "types": [
             "env"
         ],
+        "url": "https://github.com/Orangestack-com/languages-env-base-plugin",
         "releases": [
+            "1.0.2",
             "1.0.3"
-        ],
-        "url": "https://github.com/Orangestack-com/languages-env-base-plugin"
+        ]
     }
 ]
