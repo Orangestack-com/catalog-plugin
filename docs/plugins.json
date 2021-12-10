@@ -1,40 +1,5 @@
 [
     {
-        "description": "This plugin creates the stages folder with the environment properties file.",
-        "inputs": [
-            {
-                "default": "sandbox",
-                "label": "Stage name:",
-                "name": "stage_name",
-                "type": "text"
-            },
-            {
-                "label": "Cloud account id:",
-                "name": "cloud_account_id",
-                "type": "text"
-            },
-            {
-                "default": "global",
-                "label": "Cloud region:",
-                "name": "cloud_region",
-                "type": "text"
-            }
-        ],
-        "name": "stages-plugin",
-        "tags": [
-            "environment",
-            "stages"
-        ],
-        "types": [
-            "app",
-            "env"
-        ],
-        "releases": [
-            "1.0.1"
-        ],
-        "url": "https://github.com/Orangestack-com/stages-plugin"
-    },
-    {
         "computedInputs": {
             "app_class_name": "{{inputs.project_name|title|replace(, )}}"
         },
@@ -120,6 +85,45 @@
             "1.0.2",
             "1.0.3",
             "1.0.4"
+        ]
+    },
+    {
+        "description": "This plugin creates the stages folder with the environment properties file.",
+        "inputs": [
+            {
+                "default": "sandbox",
+                "label": "Stage name:",
+                "name": "stage_name",
+                "type": "text"
+            },
+            {
+                "label": "Cloud account id:",
+                "name": "cloud_account_id",
+                "type": "text"
+            },
+            {
+                "default": "global",
+                "label": "Cloud region:",
+                "name": "cloud_region",
+                "type": "text"
+            }
+        ],
+        "languages": [
+            "kotlin"
+        ],
+        "name": "stages-plugin",
+        "tags": [
+            "environment",
+            "stages"
+        ],
+        "types": [
+            "app",
+            "env"
+        ],
+        "url": "https://github.com/Orangestack-com/stages-plugin",
+        "releases": [
+            "1.0.1",
+            "1.0.2"
         ]
     }
 ]
