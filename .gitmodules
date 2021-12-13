@@ -4,3 +4,6 @@
 [submodule "stages-plugin"]
 	path = stages-plugin
 	url = https://github.com/Orangestack-com/stages-plugin.git
+[submodule "languages-app-base-plugin"]
+	path = languages-app-base-plugin
+	url = https://github.com/Orangestack-com/languages-app-base-plugin
