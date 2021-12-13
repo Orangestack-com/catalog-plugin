@@ -1,3 +1,6 @@
 [submodule "languages-env-base-plugin"]
 	path = languages-env-base-plugin
 	url = https://github.com/Orangestack-com/languages-env-base-plugin.git
+[submodule "stages-plugin"]
+	path = stages-plugin
+	url = https://github.com/Orangestack-com/stages-plugin.git
