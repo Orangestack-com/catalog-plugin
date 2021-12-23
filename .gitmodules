@@ -6,7 +6,7 @@
 	url = https://github.com/Orangestack-com/stages-plugin.git
 [submodule "languages-app-base-plugin"]
 	path = languages-app-base-plugin
-	url = https://github.com/Orangestack-com/languages-app-base-plugin
+	url = https://github.com/Orangestack-com/languages-app-base-plugin.git
 [submodule "springboot-app-plugin"]
 	path = springboot-app-plugin
 	url = git@github.com:Orangestack-com/springboot-app-plugin.git
