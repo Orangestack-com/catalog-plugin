@@ -19,4 +19,6 @@
 [submodule "sqs-producer-app-plugin"]
 	path = sqs-producer-app-plugin
 	url = https://github.com/Orangestack-com/sqs-producer-app-plugin.git
-
+[submodule "container-env-plugin"]
+	path = container-env-plugin
+	url = https://github.com/Orangestack-com/container-env-plugin
