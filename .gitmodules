@@ -25,3 +25,6 @@
 [submodule "bff-sdui-app-plugin"]
 	path = bff-sdui-app-plugin
 	url = https://github.com/Orangestack-com/bff-sdui-app-plugin.git
+[submodule "postgresql-app-plugin"]
+	path = postgresql-app-plugin
+	url = https://github.com/Orangestack-com/postgresql-app-plugin.git
