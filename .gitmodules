@@ -10,9 +10,6 @@
 [submodule "springboot-app-plugin"]
 	path = springboot-app-plugin
 	url = https://github.com/Orangestack-com/springboot-app-plugin.git
-[submodule "kvstoreconsul-app-plugin"]
-	path = kvstoreconsul-app-plugin
-	url = https://github.com/Orangestack-com/kvstoreconsul-app-plugin.git
 [submodule "sqs-consumer-app-plugin"]
 	path = sqs-consumer-app-plugin
 	url = https://github.com/Orangestack-com/sqs-consumer-app-plugin.git
