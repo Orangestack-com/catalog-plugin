@@ -1,0 +1,3 @@
+[submodule "stages-plugin"]
+	path = stages-plugin
+	url = https://github.com/stack-spot/stages-plugin.git
