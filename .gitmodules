@@ -19,6 +19,3 @@
 [submodule "container-env-plugin"]
 	path = container-env-plugin
 	url = https://github.com/Orangestack-com/container-env-plugin
-[submodule "relational-database-app-plugin"]
-	path = relational-database-app-plugin
-	url = https://github.com/Orangestack-com/relational-database-app-plugin.git
