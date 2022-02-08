@@ -22,9 +22,6 @@
 [submodule "container-env-plugin"]
 	path = container-env-plugin
 	url = https://github.com/Orangestack-com/container-env-plugin
-[submodule "bff-sdui-app-plugin"]
-	path = bff-sdui-app-plugin
-	url = https://github.com/Orangestack-com/bff-sdui-app-plugin.git
 [submodule "relational-database-app-plugin"]
 	path = relational-database-app-plugin
 	url = https://github.com/Orangestack-com/relational-database-app-plugin.git
